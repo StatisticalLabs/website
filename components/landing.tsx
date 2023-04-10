@@ -3,8 +3,8 @@ import type React from "react";
 
 const Landing: React.FC = () => {
   return (
-    <div className="py-8 px-6 flex flex-col items-center justify-center">
-      <div className="w-full max-w-[86rem]">
+    <div className=" flex flex-col items-center justify-center">
+      <div className="w-full max-w-[90rem] py-8 px-6">
         <div className="flex flex-col lg:flex-row items-center gap-4 justify-between">
           <div className="text-center lg:text-left">
             <h1 className="font-bold text-5xl">
