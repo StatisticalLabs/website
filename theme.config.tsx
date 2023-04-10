@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
 import { DocsThemeConfig } from "nextra-theme-docs";
 
 const config: DocsThemeConfig = {
@@ -15,6 +16,7 @@ const config: DocsThemeConfig = {
       />
     </span>
   ),
+  useNextSeoProps: () => ({ titleTemplate: "%s – Statistical" }),
   project: {
     link: "https://github.com/shuding/nextra-docs-template",
   },
