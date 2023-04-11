@@ -13,7 +13,7 @@ const ServerCard: React.FC<Server> = (props) => {
   return (
     <Link
       href={props.url}
-      className="border border-neutral-600 rounded-lg flex items-start gap-2 p-3"
+      className="flex items-start gap-2 rounded-lg border border-neutral-600 p-3"
     >
       <Image
         src={props.image}
@@ -69,26 +69,26 @@ const servers: Server[] = [
 const Landing: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center">
-      <div className="w-full max-w-[90rem] py-8 px-6">
-        <div className="flex flex-col lg:flex-row items-center gap-4 justify-between">
+      <div className="w-full max-w-[90rem] px-6 py-8">
+        <div className="flex flex-col items-center justify-between gap-4 lg:flex-row">
           <div className="text-center lg:text-left">
-            <h1 className="font-bold text-5xl">
+            <h1 className="text-5xl font-bold">
               The <span className="font-normal italic underline">best</span>{" "}
               tracking bot on{" "}
-              <span className="bg-gradient-to-b from-blue-800 to-indigo-600 dark:from-blue-600 dark:to-indigo-400 inline-block text-transparent bg-clip-text">
+              <span className="inline-block bg-gradient-to-b from-blue-800 to-indigo-600 bg-clip-text text-transparent dark:from-blue-600 dark:to-indigo-400">
                 Discord
               </span>
               .
             </h1>
             <p className="mt-4">
               Track any{" "}
-              <span className="bg-gradient-to-b from-red-600 to-red-800 dark:from-red-400 dark:to-red-600 inline-block text-transparent bg-clip-text font-medium">
+              <span className="inline-block bg-gradient-to-b from-red-600 to-red-800 bg-clip-text font-medium text-transparent dark:from-red-400 dark:to-red-600">
                 YouTube channel
               </span>{" "}
               and immediately find out when they have a subscriber update.
             </p>
           </div>
-          <div className="py-1.5 bg-[#323339] rounded-lg overflow-hidden">
+          <div className="overflow-hidden rounded-lg bg-[#323339] py-1.5">
             <Image
               src="/sub_update.png"
               alt="Subscriber Update"
@@ -98,7 +98,7 @@ const Landing: React.FC = () => {
           </div>
         </div>
         <div className="mt-12 flex flex-col items-center justify-center gap-5">
-          <h1 className="font-bold text-3xl text-center">
+          <h1 className="text-center text-3xl font-bold">
             Trusted by the biggest statistics YouTubers.
           </h1>
           <div className="flex gap-3">
