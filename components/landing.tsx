@@ -97,7 +97,7 @@ const Landing: React.FC = () => {
             />
           </div>
         </div>
-        <div className="mt-8 flex flex-col items-center justify-center gap-5">
+        <div className="mt-12 flex flex-col items-center justify-center gap-5">
           <h1 className="font-bold text-3xl text-center">
             Trusted by the biggest statistics YouTubers.
           </h1>
