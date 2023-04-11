@@ -20,7 +20,7 @@ const ServerCard: React.FC<Server> = (props) => {
         alt={`${props.name} Logo`}
         width={80}
         height={80}
-        className="rounded-lg"
+        className="rounded-2xl"
       />
       <div>
         <p className="text-4xl font-bold">{props.name}</p>
