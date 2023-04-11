@@ -17,4 +17,7 @@ module.exports = withNextra({
       permanent: false,
     },
   ],
+  images: {
+    domains: ["yt3.googleusercontent.com"],
+  },
 });

@@ -1,9 +1,66 @@
 import Image from "next/image";
 import type React from "react";
 
+type Server = {
+  name: string;
+  image: string;
+  statistics: { subscribers: string; members: string };
+};
+
+const ServerCard: React.FC<Server> = (props) => {
+  return (
+    <div className="border border-neutral-600 rounded-lg flex items-start gap-2 p-3">
+      <Image
+        src={props.image}
+        alt={`${props.name} Logo`}
+        width={80}
+        height={80}
+        className="rounded-lg"
+      />
+      <div>
+        <p className="text-4xl font-bold">{props.name}</p>
+        <div className="text-sm text-white/40">
+          <p>{props.statistics.subscribers}+ subscribers</p>
+          <p>{props.statistics.members}+ members</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const servers: Server[] = [
+  {
+    name: "YT Battles",
+    image:
+      "https://yt3.googleusercontent.com/ytc/AGIKgqPd54aQ6qcgWKBW5AvkS-sZaD3-vGsYbWu95mKwyw=s176-c-k-c0x00ffffff-no-rj",
+    statistics: {
+      subscribers: "275K",
+      members: "1.3K",
+    },
+  },
+  {
+    name: "Statsable",
+    image:
+      "https://yt3.googleusercontent.com/ztGKebrf_89_mROXdUnRPoDh61egEvQwpbxol9wQHjCNp0dGFQluRzYMSUJD-YXs5ZC81U7lVA=s176-c-k-c0x00ffffff-no-rj",
+    statistics: {
+      subscribers: "3.1K",
+      members: "105",
+    },
+  },
+  {
+    name: "SzaSzabi",
+    image:
+      "https://yt3.googleusercontent.com/MiwMFkXd658yiVtuV-TIp-P0Aa4xwitT2Y4fBNJTiTh3ljofvruCRkmc2fkw_7f2NK4y1AxKGA=s176-c-k-c0x00ffffff-no-rj",
+    statistics: {
+      subscribers: "15.6K",
+      members: "312",
+    },
+  },
+];
+
 const Landing: React.FC = () => {
   return (
-    <div className=" flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center">
       <div className="w-full max-w-[90rem] py-8 px-6">
         <div className="flex flex-col lg:flex-row items-center gap-4 justify-between">
           <div className="text-center lg:text-left">
@@ -30,6 +87,16 @@ const Landing: React.FC = () => {
               width={627}
               height={470}
             />
+          </div>
+        </div>
+        <div className="mt-8 flex flex-col items-center justify-center gap-5">
+          <h1 className="font-bold text-3xl text-center">
+            Trusted by the biggest statistics YouTubers.
+          </h1>
+          <div className="flex gap-3">
+            {servers.map((server) => (
+              <ServerCard {...server} key={server.name} />
+            ))}
           </div>
         </div>
       </div>
