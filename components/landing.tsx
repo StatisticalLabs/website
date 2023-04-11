@@ -1,15 +1,20 @@
 import Image from "next/image";
+import Link from "next/link";
 import type React from "react";
 
 type Server = {
   name: string;
+  url: `https://${string}`;
   image: string;
   statistics: { subscribers: string; members: string };
 };
 
 const ServerCard: React.FC<Server> = (props) => {
   return (
-    <div className="border border-neutral-600 rounded-lg flex items-start gap-2 p-3">
+    <Link
+      href={props.url}
+      className="border border-neutral-600 rounded-lg flex items-start gap-2 p-3"
+    >
       <Image
         src={props.image}
         alt={`${props.name} Logo`}
@@ -24,13 +29,14 @@ const ServerCard: React.FC<Server> = (props) => {
           <p>{props.statistics.members}+ members</p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
 const servers: Server[] = [
   {
     name: "YT Battles",
+    url: "https://youtube.com/@YT_Battles",
     image:
       "https://yt3.googleusercontent.com/ytc/AGIKgqPd54aQ6qcgWKBW5AvkS-sZaD3-vGsYbWu95mKwyw=s176-c-k-c0x00ffffff-no-rj",
     statistics: {
@@ -40,6 +46,7 @@ const servers: Server[] = [
   },
   {
     name: "Statsable",
+    url: "https://youtube.com/@Statsable",
     image:
       "https://yt3.googleusercontent.com/ztGKebrf_89_mROXdUnRPoDh61egEvQwpbxol9wQHjCNp0dGFQluRzYMSUJD-YXs5ZC81U7lVA=s176-c-k-c0x00ffffff-no-rj",
     statistics: {
@@ -49,6 +56,7 @@ const servers: Server[] = [
   },
   {
     name: "SzaSzabi",
+    url: "https://youtube.com/@SzaSzabiYT",
     image:
       "https://yt3.googleusercontent.com/MiwMFkXd658yiVtuV-TIp-P0Aa4xwitT2Y4fBNJTiTh3ljofvruCRkmc2fkw_7f2NK4y1AxKGA=s176-c-k-c0x00ffffff-no-rj",
     statistics: {
