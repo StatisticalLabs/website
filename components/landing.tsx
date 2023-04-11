@@ -65,6 +65,16 @@ const servers: Server[] = [
     },
   },
   {
+    name: "JipStats",
+    url: "https://youtube.com/@JipStats",
+    image:
+      "https://yt3.googleusercontent.com/MUp2-cuP-5u4shkbWEmYIPGWNPL9TMr4HLBVw0xaLmme9KD-W3FKouSq_qXfJqlUXT-rF_TgQw=s176-c-k-c0x00ffffff-no-rj",
+    statistics: {
+      subscribers: "3.83K",
+      members: "42",
+    },
+  },
+  {
     name: "Statsable",
     url: "https://youtube.com/@Statsable",
     image:
@@ -72,6 +82,26 @@ const servers: Server[] = [
     statistics: {
       subscribers: "3.1K",
       members: "105",
+    },
+  },
+  {
+    name: "GNZGUY",
+    url: "https://youtube.com/@GNZGUY",
+    image:
+      "https://yt3.googleusercontent.com/oUcmdn7rkvxQPgKPYfjinOSt3ZhmER46dJ8u8mE8lom05BijMZzxh-KNqX2HtrA6Tymx2be_=s176-c-k-c0x00ffffff-no-rj",
+    statistics: {
+      subscribers: "800",
+      members: "35",
+    },
+  },
+  {
+    name: "Cadzilla",
+    url: "https://youtube.com/@Cadzilla",
+    image:
+      "https://yt3.googleusercontent.com/1fc4Bd4bglgecB3it1GX6Okwz-XC0rhjbeTOyEVCjqhITBe00MsI2aH5pcVw2SASLPDUz13bQw=s176-c-k-c0x00ffffff-no-rj",
+    statistics: {
+      subscribers: "50",
+      members: "83",
     },
   },
 ];
