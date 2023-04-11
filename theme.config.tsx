@@ -58,7 +58,10 @@ const config: DocsThemeConfig = {
         <meta name="title" content={titleTemplate.replace("%s", title)} />
         <meta name="description" content={description} />
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:title" content={title} />
+        <meta
+          property="twitter:title"
+          content={titleTemplate.replace("%s", title)}
+        />
         <meta name="twitter:site:domain" content={domain} />
         <meta name="twitter:url" content={url} />
         <meta property="og:type" content="website" />
