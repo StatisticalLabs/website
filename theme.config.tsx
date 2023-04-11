@@ -35,15 +35,25 @@ const config: DocsThemeConfig = {
     link: "/discord",
   },
   docsRepositoryBase: "https://github.com/StatisticalLabs/website",
-  footer: {
-    text: <p>&copy; {new Date().getFullYear()} Statistical Labs</p>,
-  },
   editLink: {
     text: "Edit this page on GitHub →",
   },
   feedback: {
     content: "Question? Give us feedback →",
     labels: "feedback",
+  },
+  sidebar: {
+    titleComponent({ title, type }) {
+      if (type === "separator") {
+        return <span className="cursor-default">{title}</span>;
+      }
+      return <>{title}</>;
+    },
+    defaultMenuCollapseLevel: 1,
+    toggleButton: true,
+  },
+  footer: {
+    text: <p>&copy; {new Date().getFullYear()} Statistical Labs</p>,
   },
 };
 
