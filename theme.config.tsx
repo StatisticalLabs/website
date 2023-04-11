@@ -1,6 +1,5 @@
 import Image from "next/image";
-import { useRouter } from "next/router";
-import { DocsThemeConfig } from "nextra-theme-docs";
+import { useConfig, type DocsThemeConfig } from "nextra-theme-docs";
 
 const config: DocsThemeConfig = {
   logo: (
@@ -41,6 +40,31 @@ const config: DocsThemeConfig = {
   feedback: {
     content: "Question? Give us feedback →",
     labels: "feedback",
+  },
+  head: () => {
+    const { title } = useConfig();
+    const description =
+      "Track your favorite YouTuber's subscriber counts, view statistics about a server and it's users, and more.";
+    const domain = "statistical.vercel.app";
+    const url = ("https://" + domain) as `https://${typeof domain}`;
+
+    return (
+      <>
+        <meta charSet="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="title" content={title} />
+        <meta name="description" content={description} />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content={title} />
+        <meta name="twitter:site:domain" content={domain} />
+        <meta name="twitter:url" content={url} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={url} />
+        <meta property="og:description" content={description} />
+        <meta name="theme-color" content="#ffffff" />
+      </>
+    );
   },
   sidebar: {
     titleComponent({ title, type }) {
