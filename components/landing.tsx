@@ -35,6 +35,16 @@ const ServerCard: React.FC<Server> = (props) => {
 
 const servers: Server[] = [
   {
+    name: "Elenz Stats",
+    url: "https://youtube.com/@Elenz_Stats",
+    image:
+      "https://yt3.googleusercontent.com/zvkstUcqhBVBpIcpx8l7m-otMKkD22nsKI-FKfrr52PlTJT3_ni4-O9dl2nWBBZQPUubK3clR5g=s176-c-k-c0x00ffffff-no-rj",
+    statistics: {
+      subscribers: "320K",
+      members: "17",
+    },
+  },
+  {
     name: "YT Battles",
     url: "https://youtube.com/@YT_Battles",
     image:
@@ -45,16 +55,6 @@ const servers: Server[] = [
     },
   },
   {
-    name: "Statsable",
-    url: "https://youtube.com/@Statsable",
-    image:
-      "https://yt3.googleusercontent.com/ztGKebrf_89_mROXdUnRPoDh61egEvQwpbxol9wQHjCNp0dGFQluRzYMSUJD-YXs5ZC81U7lVA=s176-c-k-c0x00ffffff-no-rj",
-    statistics: {
-      subscribers: "3.1K",
-      members: "105",
-    },
-  },
-  {
     name: "SzaSzabi",
     url: "https://youtube.com/@SzaSzabiYT",
     image:
@@ -62,6 +62,16 @@ const servers: Server[] = [
     statistics: {
       subscribers: "15.6K",
       members: "312",
+    },
+  },
+  {
+    name: "Statsable",
+    url: "https://youtube.com/@Statsable",
+    image:
+      "https://yt3.googleusercontent.com/ztGKebrf_89_mROXdUnRPoDh61egEvQwpbxol9wQHjCNp0dGFQluRzYMSUJD-YXs5ZC81U7lVA=s176-c-k-c0x00ffffff-no-rj",
+    statistics: {
+      subscribers: "3.1K",
+      members: "105",
     },
   },
 ];
@@ -101,7 +111,7 @@ const Landing: React.FC = () => {
           <h1 className="text-center text-3xl font-bold">
             Trusted by the biggest statistics YouTubers.
           </h1>
-          <div className="flex gap-3">
+          <div className="flex flex-wrap justify-center gap-3">
             {servers.map((server) => (
               <ServerCard {...server} key={server.name} />
             ))}
