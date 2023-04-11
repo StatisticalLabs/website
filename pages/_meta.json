@@ -8,8 +8,8 @@
     }
   },
   "docs": {
-    "type": "page",
-    "title": "Documentation"
+    "title": "Documentation",
+    "type": "page"
   },
   "about": {
     "title": "About",
