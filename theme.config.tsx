@@ -38,6 +38,13 @@ const config: DocsThemeConfig = {
   footer: {
     text: <p>&copy; {new Date().getFullYear()} Statistical Labs</p>,
   },
+  editLink: {
+    text: "Edit this page on GitHub →",
+  },
+  feedback: {
+    content: "Question? Give us feedback →",
+    labels: "feedback",
+  },
 };
 
 export default config;
