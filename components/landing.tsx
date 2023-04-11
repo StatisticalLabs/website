@@ -24,7 +24,7 @@ const ServerCard: React.FC<Server> = (props) => {
       />
       <div>
         <p className="text-4xl font-bold">{props.name}</p>
-        <div className="text-sm text-white/40">
+        <div className="text-sm text-black/40 dark:text-white/40">
           <p>{props.statistics.subscribers}+ subscribers</p>
           <p>{props.statistics.members}+ members</p>
         </div>
