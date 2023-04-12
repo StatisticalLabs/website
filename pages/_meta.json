@@ -17,13 +17,5 @@
     "theme": {
       "typesetting": "article"
     }
-  },
-  "404": {
-    "title": "Not Found",
-    "type": "page",
-    "display": "hidden",
-    "theme": {
-      "typesetting": "article"
-    }
   }
 }
