@@ -127,6 +127,16 @@ const Landing: React.FC = () => {
               </span>{" "}
               and immediately find out when their subscriber count changes.
             </p>
+            <div className="p-4" />
+            <Link
+              href="/docs"
+              className="group rounded-lg bg-blue-500 px-3 py-2 text-white transition-all hover:shadow-lg hover:shadow-blue-500/60 dark:text-inherit"
+            >
+              Get started{" "}
+              <span className="inline-block transition-all group-hover:translate-x-1">
+                →
+              </span>
+            </Link>
           </div>
           <div className="overflow-hidden rounded-lg bg-[#323339] py-1.5">
             <Image
