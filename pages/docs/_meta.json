@@ -1,5 +1,6 @@
 {
   "index": "Introduction",
-  "tracking": "Tracking a channel",
+  "start-tracking": "Start tracking a channel",
+  "stop-tracking": "Stop tracking a channel",
   "server-related-stats": "Server-related statistics"
 }
