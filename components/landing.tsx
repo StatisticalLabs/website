@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type React from "react";
+import subscriberUpdate from "../public/sub_update.png";
 
 type Server = {
   name: string;
@@ -130,7 +131,7 @@ const Landing: React.FC = () => {
             <div className="p-4" />
             <Link
               href="/docs"
-              className="group rounded-lg bg-blue-500 px-3 py-2 text-white transition-all hover:shadow-lg hover:shadow-blue-500/60 dark:text-inherit"
+              className="group rounded-lg bg-blue-500 px-3 py-2  text-white transition-all hover:shadow-lg hover:shadow-blue-500/60 dark:text-inherit"
             >
               Get started{" "}
               <span className="inline-block transition-all group-hover:translate-x-1">
@@ -140,7 +141,8 @@ const Landing: React.FC = () => {
           </div>
           <div className="overflow-hidden rounded-lg bg-[#323339] py-1.5">
             <Image
-              src="/sub_update.png"
+              src={subscriberUpdate}
+              placeholder="blur"
               alt="Subscriber Update"
               width={627}
               height={470}
