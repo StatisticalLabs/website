@@ -35,7 +35,7 @@ const config: DocsThemeConfig = {
   chat: {
     link: "/discord",
   },
-  docsRepositoryBase: "https://github.com/StatisticalLabs/website",
+  docsRepositoryBase: "https://github.com/StatisticalLabs/website/blob/main",
   editLink: {
     text: "Edit this page on GitHub →",
   },
