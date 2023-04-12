@@ -125,7 +125,7 @@ const Landing: React.FC = () => {
               <span className="inline-block bg-gradient-to-b from-red-600 to-red-800 bg-clip-text font-medium text-transparent dark:from-red-400 dark:to-red-600">
                 YouTube channel
               </span>{" "}
-              and immediately find out when they have a subscriber update.
+              and immediately find out when their subscriber count changes.
             </p>
           </div>
           <div className="overflow-hidden rounded-lg bg-[#323339] py-1.5">
