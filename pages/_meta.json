@@ -17,5 +17,13 @@
     "theme": {
       "typesetting": "article"
     }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "type": "page",
+    "display": "hidden",
+    "theme": {
+      "typesetting": "article"
+    }
   }
 }
