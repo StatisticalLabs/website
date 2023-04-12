@@ -111,7 +111,7 @@ const Landing: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="w-full max-w-[90rem] px-6 py-8">
-        <div className="flex flex-col items-center justify-between gap-4 lg:flex-row">
+        <div className="flex flex-col items-center justify-between gap-6 lg:flex-row lg:gap-4">
           <div className="text-center lg:text-left">
             <h1 className="text-5xl font-bold">
               The <span className="font-normal italic underline">best</span>{" "}
@@ -128,7 +128,7 @@ const Landing: React.FC = () => {
               </span>{" "}
               and immediately find out when their subscriber count changes.
             </p>
-            <div className="p-4" />
+            <div className="p-3 lg:p-4" />
             <Link
               href="/docs"
               className="group rounded-lg bg-blue-500 px-3 py-2  text-white transition-all hover:shadow-lg hover:shadow-blue-500/60 dark:text-inherit"
