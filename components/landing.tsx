@@ -107,6 +107,46 @@ const servers: Server[] = [
   },
 ];
 
+type Review = {
+  name: string;
+  url: `https://${string}`;
+  image: string;
+  message: string;
+};
+
+const ReviewCard: React.FC<Review> = (props) => {
+  return (
+    <Link
+      href={props.url}
+      className="flex items-start gap-2 rounded-lg border border-neutral-600 p-3 hover:border-white"
+    >
+      <Image
+        src={props.image}
+        alt={`${props.name} Logo`}
+        width={56}
+        height={56}
+        className="rounded-full"
+      />
+      <div>
+        <p className="text-xl">{props.message}</p>
+        <div className="text-sm text-black/40 dark:text-white/40">
+          <p>- {props.name}</p>
+        </div>
+      </div>
+    </Link>
+  );
+};
+
+const reviews: Review[] = [
+  {
+    name: "Elenz Stats",
+    url: "https://youtube.com/@Elenz_Stats",
+    image:
+      "https://yt3.googleusercontent.com/zvkstUcqhBVBpIcpx8l7m-otMKkD22nsKI-FKfrr52PlTJT3_ni4-O9dl2nWBBZQPUubK3clR5g=s176-c-k-c0x00ffffff-no-rj",
+    message: "5 stars. Would give more if you had more stars.",
+  },
+];
+
 const Landing: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center">
@@ -156,6 +196,16 @@ const Landing: React.FC = () => {
           <div className="flex flex-wrap justify-center gap-3">
             {servers.map((server) => (
               <ServerCard {...server} key={server.name} />
+            ))}
+          </div>
+        </div>
+        <div className="mt-12 flex flex-col items-center justify-center gap-5">
+          <h1 className="text-center text-3xl font-bold">
+            But hey, words speak louder than cards.
+          </h1>
+          <div className="flex flex-wrap justify-center gap-3">
+            {reviews.map((review) => (
+              <ReviewCard {...review} key={review.name} />
             ))}
           </div>
         </div>
