@@ -71,7 +71,7 @@ const servers: Server[] = [
     image:
       "https://yt3.googleusercontent.com/MUp2-cuP-5u4shkbWEmYIPGWNPL9TMr4HLBVw0xaLmme9KD-W3FKouSq_qXfJqlUXT-rF_TgQw=s176-c-k-c0x00ffffff-no-rj",
     statistics: {
-      subscribers: "3.83K",
+      subscribers: "3.8K",
       members: "42",
     },
   },
