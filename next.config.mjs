@@ -14,13 +14,12 @@ export default withNextra({
     },
     {
       source: "/invite",
-      destination:
-        "https://discord.com/api/oauth2/authorize?client_id=1077159995487035402&permissions=19456&scope=applications.commands%20bot",
+      destination: "https://top.gg/bot/1077159995487035402/invite",
       permanent: false,
     },
     {
       source: "/vote",
-      destination: "https://top.gg/bot/1077159995487035402/invite",
+      destination: "https://top.gg/bot/1077159995487035402/vote",
       permanent: false,
     },
   ],
