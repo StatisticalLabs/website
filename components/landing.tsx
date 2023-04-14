@@ -155,7 +155,7 @@ const Landing: React.FC = () => {
           <div className="text-center lg:text-left">
             <h1 className="text-5xl font-bold">
               The <span className="font-normal italic underline">best</span>{" "}
-              tracking bot on <span className="text-blue-600">Discord</span>.
+              tracking bot on <span className="text-[#5865F2]">Discord</span>.
             </h1>
             <p className="mt-4">
               Track any{" "}
