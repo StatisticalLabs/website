@@ -155,15 +155,11 @@ const Landing: React.FC = () => {
           <div className="text-center lg:text-left">
             <h1 className="text-5xl font-bold">
               The <span className="font-normal italic underline">best</span>{" "}
-              tracking bot on{" "}
-              <span className="inline-block bg-gradient-to-b from-blue-800 to-indigo-600 bg-clip-text text-transparent dark:from-blue-600 dark:to-indigo-400">
-                Discord
-              </span>
-              .
+              tracking bot on <span className="text-blue-600">Discord</span>.
             </h1>
             <p className="mt-4">
               Track any{" "}
-              <span className="inline-block bg-gradient-to-b from-red-600 to-red-800 bg-clip-text font-medium text-transparent dark:from-red-400 dark:to-red-600">
+              <span className="font-semibold text-red-500">
                 YouTube channel
               </span>{" "}
               and immediately find out when their subscriber count changes.
