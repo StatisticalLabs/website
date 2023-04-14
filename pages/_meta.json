@@ -18,6 +18,13 @@
       "typesetting": "article"
     }
   },
+  "terms": {
+    "title": "Terms of Service",
+    "type": "page",
+    "theme": {
+      "typesetting": "article"
+    }
+  },
   "privacy": {
     "title": "Privacy Policy",
     "type": "page",
