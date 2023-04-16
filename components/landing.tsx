@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type React from "react";
+import Balancer, { Provider as BalancerProvider } from "react-wrap-balancer";
 import subscriberUpdate from "../public/sub_update.png";
 
 type Server = {
@@ -151,19 +152,23 @@ const Landing: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="w-full max-w-[90rem] px-6 py-8">
-        <div className="flex flex-col items-center justify-between gap-6 lg:flex-row lg:gap-4">
+        <div className="flex flex-col gap-8 lg:grid lg:grid-cols-2 lg:items-center lg:gap-4">
           <div className="text-center lg:text-left">
-            <h1 className="text-5xl font-bold">
-              The <span className="font-normal italic underline">best</span>{" "}
-              tracking bot on <span className="text-[#5865F2]">Discord</span>.
-            </h1>
-            <p className="mt-4">
-              Track any{" "}
-              <span className="font-semibold text-red-500">
-                YouTube channel
-              </span>{" "}
-              and immediately find out when their subscriber count changes.
-            </p>
+            <BalancerProvider>
+              <Balancer as="h1" className="text-5xl font-bold">
+                Track anyone,{" "}
+                <span className="font-normal italic underline">at anytime</span>
+                .
+              </Balancer>
+              <Balancer as="p" className="mt-4">
+                With one command, you can start tracking any{" "}
+                <span className="font-semibold text-red-500">
+                  YouTube channel
+                </span>{" "}
+                and immediately get notified when their subscriber count
+                updates.
+              </Balancer>
+            </BalancerProvider>
             <div className="p-3 lg:p-4" />
             <Link
               href="/docs"
