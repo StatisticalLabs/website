@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { type ReactNode } from "react";
+import React, { type ReactNode } from "react";
 
 function FooterLink({ href, children }: { href: string; children: ReactNode }) {
   const classes =
@@ -57,7 +57,7 @@ const navigation: Navigation = {
   ],
 };
 
-export function Footer() {
+const Footer: React.FC = () => {
   return (
     <footer className="" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
@@ -139,4 +139,6 @@ export function Footer() {
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;

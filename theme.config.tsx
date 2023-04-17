@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useConfig, type DocsThemeConfig } from "nextra-theme-docs";
-import { Footer } from "./components/footer";
+import Footer from "./components/footer";
 
 const titleTemplate = "%s – Statistical";
 
