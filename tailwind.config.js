@@ -6,7 +6,11 @@ module.exports = {
     "./theme.config.tsx",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        betterhover: { raw: "(hover: hover)" },
+      },
+    },
   },
   plugins: [],
   darkMode: "class",

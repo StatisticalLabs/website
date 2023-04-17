@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useConfig, type DocsThemeConfig } from "nextra-theme-docs";
+import { Footer } from "./components/footer";
 
 const titleTemplate = "%s – Statistical";
 
@@ -82,7 +83,7 @@ const config: DocsThemeConfig = {
     toggleButton: true,
   },
   footer: {
-    text: <p>&copy; {new Date().getFullYear()} Statistical Labs</p>,
+    text: <Footer />,
   },
 };
 
