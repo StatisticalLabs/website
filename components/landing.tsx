@@ -172,11 +172,14 @@ const Landing: React.FC = () => {
             <div className="p-3 lg:p-4" />
             <Link
               href="/docs"
-              className="group rounded-lg bg-blue-500 px-3 py-2  text-white transition-all hover:shadow-lg hover:shadow-blue-500/60 dark:text-inherit"
+              className="group relative rounded-lg bg-gradient-to-b from-blue-500 to-indigo-700 px-3 py-2 text-white dark:text-inherit"
             >
-              Get started{" "}
-              <span className="inline-block transition-all group-hover:translate-x-1">
-                →
+              <span className="absolute -inset-0.5 bg-gradient-to-b from-blue-500 to-indigo-700 opacity-75 blur-md transition-all group-hover:opacity-100" />
+              <span className="relative">
+                Get started{" "}
+                <span className="inline-block transition-all group-hover:translate-x-1">
+                  →
+                </span>
               </span>
             </Link>
           </div>
