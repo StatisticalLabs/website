@@ -183,14 +183,17 @@ const Landing: React.FC = () => {
               </span>
             </Link>
           </div>
-          <div className="overflow-hidden rounded-lg bg-[#323339] py-1.5">
-            <Image
-              src={subscriberUpdate}
-              placeholder="blur"
-              alt="Subscriber Update"
-              width={627}
-              height={470}
-            />
+          <div className="relative">
+            <span className="absolute -inset-0.5 bg-[#323339] blur-lg" />
+            <div className="relative overflow-hidden rounded-lg bg-[#323339] py-1.5">
+              <Image
+                src={subscriberUpdate}
+                placeholder="blur"
+                alt="Subscriber Update"
+                width={627}
+                height={470}
+              />
+            </div>
           </div>
         </div>
         <div className="mt-12 flex flex-col items-center justify-center gap-5">
