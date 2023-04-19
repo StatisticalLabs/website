@@ -183,7 +183,7 @@ const Landing: React.FC = () => {
               </span>
             </Link>
           </div>
-          <div className="relative">
+          <div className="relative mx-auto">
             <span className="absolute -inset-0.5 bg-[#323339] blur-lg" />
             <div className="relative overflow-hidden rounded-lg bg-[#323339] py-1.5">
               <Image
