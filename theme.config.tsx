@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useConfig, type DocsThemeConfig } from "nextra-theme-docs";
 import Footer from "./components/footer";
 
@@ -71,6 +72,15 @@ const config: DocsThemeConfig = {
         <meta name="theme-color" content="#ffffff" />
       </>
     );
+  },
+  banner: {
+    dismissible: true,
+    key: "graphs-added",
+    text: (
+      <Link href="/docs/graphs" className="block w-full">
+        By great demand, we have added graphs! Learn more →
+      </Link>
+    ),
   },
   sidebar: {
     titleComponent({ title, type }) {
