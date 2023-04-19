@@ -130,8 +130,8 @@ const Footer: React.FC = () => {
                 />
               </a>
               <p className="mt-4 text-xs text-neutral-500">
-                &copy; {new Date().getFullYear()} Statistical Labs. All rights
-                reserved.
+                &copy; {new Date().getFullYear()} Statistical Labs, a
+                subdivision of Graphify Studios. All rights reserved.
               </p>
             </div>
           </div>
