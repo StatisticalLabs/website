@@ -19,7 +19,6 @@
     }
   },
   "blog": {
-    "title": "Blog",
     "type": "page",
     "theme": {
       "typesetting": "article"
