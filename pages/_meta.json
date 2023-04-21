@@ -18,6 +18,13 @@
       "typesetting": "article"
     }
   },
+  "blog": {
+    "title": "Blog",
+    "type": "page",
+    "theme": {
+      "typesetting": "article"
+    }
+  },
   "terms": {
     "title": "Terms of Service",
     "type": "page",

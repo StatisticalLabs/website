@@ -1,0 +1,48 @@
+---
+description: The latest updates and releases from the Statistical Labs team.
+type: posts
+---
+
+import { getPagesUnderRoute } from "nextra/context";
+import Link from "next/link";
+
+export function BlogHeader() {
+  return (
+    <div className="mx-auto mb-16 max-w-screen-lg border-b border-gray-400 border-opacity-20 pb-8 pt-4">
+      <h1>
+        <span className="font-bold leading-tight lg:text-5xl">Blog</span>
+      </h1>
+      <p className="font-space-grotesk text-center text-gray-500 dark:text-gray-400">
+        The latest updates and releases from the Statistical Labs team.
+      </p>
+    </div>
+  );
+}
+
+export function BlogIndex() {
+  return getPagesUnderRoute("/blog").map((page) => {
+    return (
+      <div key={page.route} className="mb-10">
+        <Link
+          href={page.route}
+          style={{ color: "inherit", textDecoration: "none" }}
+          className="mt-8 block text-2xl font-semibold"
+        >
+          {page.meta?.title || page.frontMatter?.title || page.name}
+        </Link>
+        <p className="opacity-80" style={{ marginTop: ".5rem" }}>
+          {page.frontMatter?.description}{" "}
+          <span className="inline-block">
+            <Link href={page.route}>{"Read more →"}</Link>
+          </span>
+        </p>
+        {page.frontMatter?.date ? (
+          <p className="text-sm opacity-50">{page.frontMatter.date}</p>
+        ) : null}
+      </div>
+    );
+  });
+}
+
+<BlogHeader />
+<BlogIndex />

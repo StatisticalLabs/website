@@ -27,14 +27,7 @@ function FooterHeader({ children }: { children: ReactNode }) {
   );
 }
 
-type Navigation = {
-  [key: string]: {
-    name: string;
-    href: string;
-  }[];
-};
-
-const navigation: Navigation = {
+const navigation: Record<string, { name: string; href: string }[]> = {
   general: [
     { name: "Documentation", href: "/docs" },
     { name: "About", href: "/about" },
@@ -50,6 +43,7 @@ const navigation: Navigation = {
   company: [
     { name: "GitHub", href: "https://github.com/StatisticalLabs" },
     { name: "Twitter", href: "https://twitter.com/GraphifyStats" },
+    { name: "Blog", href: "/blog" },
   ],
   legal: [
     { name: "Privacy Policy", href: "/privacy" },
@@ -120,7 +114,7 @@ const Footer: React.FC = () => {
                 className="text-current"
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://www.cloudquery.io"
+                href="/"
               >
                 <Image
                   src="/logo.png"
