@@ -1,6 +1,5 @@
 import cn from "classnames";
-import type { Author } from "../content/team";
-import TEAM from "../content/team";
+import TEAM, { type Author } from "../../content/team";
 import { Avatar } from "./avatar";
 
 export function Authors({ authors }: { authors: Array<Author> }) {
