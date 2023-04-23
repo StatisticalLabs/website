@@ -156,9 +156,8 @@ const Landing: React.FC = () => {
           <div className="text-center lg:text-left">
             <BalancerProvider>
               <Balancer as="h1" className="text-5xl font-bold">
-                Track anyone,{" "}
-                <span className="font-normal italic underline">at anytime</span>
-                .
+                Track anyone{" "}
+                <span className="font-normal italic underline">anytime</span>.
               </Balancer>
               <Balancer as="p" className="mt-4">
                 With one command, you can start tracking any{" "}
