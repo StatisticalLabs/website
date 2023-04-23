@@ -57,9 +57,9 @@ const Footer: React.FC = () => {
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="mx-auto max-w-7xl py-8">
+      <div className="mx-auto max-w-7xl pt-8">
         <div className="pb-3 xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="grid grid-cols-2 gap-8 xl:col-span-2">
+          <div className="grid grid-cols-2 gap-8 xl:col-span-3">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <FooterHeader>General</FooterHeader>
@@ -105,7 +105,6 @@ const Footer: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="mt-12 h-[180px] w-[400px] xl:!mt-0"></div>
         </div>
         <div className="md:grid md:grid-cols-2 md:gap-8">
           <div className="mt-8 md:flex md:items-center md:justify-between">
