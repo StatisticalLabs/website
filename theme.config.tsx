@@ -73,15 +73,15 @@ const config: DocsThemeConfig = {
       </>
     );
   },
-  banner: {
-    dismissible: true,
-    key: "graphs-added",
-    text: (
-      <Link href="/docs/graphs" className="block w-full">
-        By great demand, we have added graphs! Learn more →
-      </Link>
-    ),
-  },
+  // banner: {
+  //   dismissible: true,
+  //   key: "graphs-added",
+  //   text: (
+  //     <Link href="/docs/graphs" className="block w-full">
+  //       By great demand, we have added graphs! Learn more →
+  //     </Link>
+  //   ),
+  // },
   sidebar: {
     titleComponent({ title, type }) {
       if (type === "separator") {
