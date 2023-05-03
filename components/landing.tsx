@@ -156,7 +156,7 @@ const Landing: React.FC = () => {
           <div className="text-center lg:text-left">
             <BalancerProvider>
               <Balancer as="h1" className="text-5xl font-bold">
-                Track anyone{" "}
+                Track anyone,{" "}
                 <span className="font-normal italic underline">anytime</span>.
               </Balancer>
               <Balancer as="p" className="mt-4">
@@ -182,7 +182,7 @@ const Landing: React.FC = () => {
               </span>
             </Link>
           </div>
-          <div className="relative mx-auto">
+          <div className="relative mx-auto lg:mr-0">
             <span className="absolute -inset-0.5 bg-[#323339] blur-lg" />
             <div className="relative overflow-hidden rounded-lg bg-[#323339] py-1.5">
               <Image
