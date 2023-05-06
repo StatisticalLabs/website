@@ -87,6 +87,16 @@ const servers: Server[] = [
     },
   },
   {
+    name: "Choccy Statistics",
+    url: "https://youtube.com/@ChoccyStatistics",
+    image:
+      "https://yt3.googleusercontent.com/ytc/AGIKgqOAoUWmMGLE5NQnOtEhZB-Li9hbR4MZmnY5kT9G=s176-c-k-c0x00ffffff-no-rj",
+    statistics: {
+      subscribers: "2.1K",
+      members: "78",
+    },
+  },
+  {
     name: "GNZGUY",
     url: "https://youtube.com/@GNZGUY",
     image:
@@ -94,16 +104,6 @@ const servers: Server[] = [
     statistics: {
       subscribers: "800",
       members: "35",
-    },
-  },
-  {
-    name: "Cadzilla",
-    url: "https://youtube.com/@Cadzilla",
-    image:
-      "https://yt3.googleusercontent.com/1fc4Bd4bglgecB3it1GX6Okwz-XC0rhjbeTOyEVCjqhITBe00MsI2aH5pcVw2SASLPDUz13bQw=s176-c-k-c0x00ffffff-no-rj",
-    statistics: {
-      subscribers: "50",
-      members: "83",
     },
   },
 ];
