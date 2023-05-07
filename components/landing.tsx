@@ -112,20 +112,23 @@ const Landing: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="w-full max-w-[90rem] px-6 py-8">
-        <div className="flex flex-col gap-8 lg:grid lg:grid-cols-2 lg:items-center lg:gap-4">
-          <div className="text-center lg:text-left">
+        <div className="flex flex-col gap-8">
+          <div className="text-center">
             <BalancerProvider>
-              <Balancer as="h1" className="text-5xl font-bold">
-                Track anyone,{" "}
-                <span className="font-normal italic underline">anytime</span>.
+              <Balancer as="h1" className="text-5xl font-bold leading-tight">
+                The{" "}
+                <span className="relative">
+                  <span className="absolute -inset-0.5 bg-gradient-to-b from-blue-500 to-indigo-700 opacity-75 blur-md transition-all group-hover:opacity-100" />
+                  <span className="relative rounded-lg bg-gradient-to-b from-blue-500 to-indigo-700 px-3 py-1 text-white">
+                    most popular
+                  </span>
+                </span>{" "}
+                way to track{" "}
+                <span className="text-red-500">YouTube channels</span>.
               </Balancer>
               <Balancer as="p" className="mt-4">
-                With one command, you can start tracking any{" "}
-                <span className="font-semibold text-red-500">
-                  YouTube channel
-                </span>{" "}
-                and immediately get notified when their subscriber count
-                updates.
+                With one command, you can start tracking anyone and immediately
+                get notified when their subscriber count updates.
               </Balancer>
             </BalancerProvider>
             <div className="p-3 lg:p-4" />
@@ -142,7 +145,7 @@ const Landing: React.FC = () => {
               </span>
             </Link>
           </div>
-          <div className="relative mx-auto lg:mr-0">
+          <div className="relative mx-auto">
             <span className="absolute -inset-0.5 bg-[#323339] blur-lg" />
             <div className="relative overflow-hidden rounded-lg bg-[#323339] py-1.5">
               <Image
