@@ -15,7 +15,7 @@ const ServerCard: React.FC<Server> = (props) => {
   return (
     <Link
       href={props.url}
-      className="flex items-start gap-2 rounded-lg border border-neutral-600 p-3 hover:border-white"
+      className="flex items-start gap-2 rounded-lg border border-neutral-600 p-3 transition-colors hover:bg-black/10 dark:hover:bg-white/10"
     >
       <Image
         src={props.image}
