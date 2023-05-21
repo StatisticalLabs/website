@@ -131,19 +131,21 @@ const Landing: React.FC = () => {
                 get notified when their subscriber count updates.
               </Balancer>
             </BalancerProvider>
-            <div className="p-3 lg:p-4" />
-            <Link
-              href="/docs"
-              className="group relative rounded-lg bg-gradient-to-b from-blue-500 to-indigo-700 px-3 py-2 text-white dark:text-inherit"
-            >
-              <span className="absolute -inset-0.5 bg-gradient-to-b from-blue-500 to-indigo-700 opacity-75 blur-md transition-all group-hover:opacity-100" />
-              <span className="relative">
-                Get started{" "}
-                <span className="inline-block transition-all group-hover:translate-x-1">
-                  →
-                </span>
-              </span>
-            </Link>
+            <div className="p-2" />
+            <div className="flex justify-center gap-2">
+              <Link
+                href="/invite"
+                className="rounded-md bg-blue-600 px-3 py-2 text-white transition-all hover:-translate-y-1 hover:bg-blue-700 dark:text-inherit"
+              >
+                Add Statistical to your server
+              </Link>
+              <Link
+                href="/docs"
+                className="rounded-md bg-black px-3 py-2 text-white transition-all hover:-translate-y-1 hover:bg-neutral-700 dark:bg-white dark:text-black hover:dark:bg-neutral-300"
+              >
+                Learn more{" "}
+              </Link>
+            </div>
           </div>
           <div className="relative mx-auto">
             <span className="absolute -inset-0.5 bg-[#323339] blur-lg" />
