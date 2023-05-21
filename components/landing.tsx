@@ -135,7 +135,7 @@ const Landing: React.FC = () => {
               href="/invite"
               className="rounded-md bg-blue-600 px-3 py-2 text-white transition-all hover:-translate-y-1 hover:bg-blue-700 dark:text-inherit"
             >
-              Add Nickify to your server
+              Add Statistical to your server
             </Link>
             <Link
               href="/docs"
