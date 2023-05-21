@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       screens: {
         betterhover: { raw: "(hover: hover)" },
+        xs: "393px",
       },
     },
   },
