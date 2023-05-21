@@ -39,5 +39,13 @@
     "theme": {
       "typesetting": "article"
     }
+  },
+  "other-projects": {
+    "title": "Other projects",
+    "type": "page",
+    "display": "hidden",
+    "theme": {
+      "typesetting": "default"
+    }
   }
 }
