@@ -131,17 +131,19 @@ const Landing: React.FC = () => {
             </Balancer>
           </BalancerProvider>
           <div className="mt-1 flex justify-center gap-2">
-            <Link
-              href="/invite"
-              className="rounded-md bg-blue-600 px-3 py-2 text-white transition-all hover:-translate-y-1 hover:bg-blue-700 dark:text-inherit"
-            >
-              Add Statistical to your server
+            <Link href="/invite" legacyBehavior>
+              <button
+                className="rounded-md bg-blue-600 px-3 py-2 text-white transition-all enabled:hover:-translate-y-1 enabled:hover:bg-blue-700 disabled:opacity-50 dark:text-inherit"
+                title="Statistical can't be added currently due to the bot not being verified yet. Try again later."
+                disabled
+              >
+                Add Statistical to your server
+              </button>
             </Link>
-            <Link
-              href="/docs"
-              className="rounded-md bg-black px-3 py-2 text-white transition-all hover:-translate-y-1 hover:bg-neutral-700 dark:bg-white dark:text-black hover:dark:bg-neutral-300"
-            >
-              Learn more{" "}
+            <Link href="/docs" legacyBehavior>
+              <button className="rounded-md bg-black px-3 py-2 text-white transition-all enabled:hover:-translate-y-1 enabled:hover:bg-neutral-700 disabled:opacity-50 dark:bg-white dark:text-black enabled:hover:dark:bg-neutral-300">
+                Learn more
+              </button>
             </Link>
           </div>
           <div className="p-1" />
