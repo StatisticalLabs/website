@@ -133,7 +133,7 @@ const Landing: React.FC = () => {
           <div className="mt-1 flex justify-center gap-2">
             <Link href="/invite" legacyBehavior>
               <button
-                className="!cursor-not-allowed rounded-md bg-blue-600 px-3 py-2 text-white transition-all enabled:hover:-translate-y-1 enabled:hover:bg-blue-700 disabled:opacity-50 dark:text-inherit"
+                className="rounded-md bg-blue-600 px-3 py-2 text-white transition-all enabled:hover:-translate-y-1 enabled:hover:bg-blue-700 disabled:!cursor-not-allowed disabled:opacity-50 dark:text-inherit"
                 title="Statistical can't be added currently due to the bot not being verified yet. Try again later."
                 disabled
               >
