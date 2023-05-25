@@ -31,6 +31,7 @@ const config: DocsThemeConfig = {
       <Link href="/invite" legacyBehavior>
         <button
           className="p-1 disabled:!cursor-not-allowed disabled:opacity-50"
+          title="Statistical can't be added currently due to the bot not being verified yet. Try again later."
           disabled
         >
           <svg
