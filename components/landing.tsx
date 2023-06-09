@@ -37,16 +37,6 @@ const ServerCard: React.FC<Server> = (props) => {
 
 const servers: Server[] = [
   {
-    name: "Elenz Stats",
-    url: "https://youtube.com/@Elenz_Stats",
-    image:
-      "https://yt3.googleusercontent.com/zvkstUcqhBVBpIcpx8l7m-otMKkD22nsKI-FKfrr52PlTJT3_ni4-O9dl2nWBBZQPUubK3clR5g=s176-c-k-c0x00ffffff-no-rj",
-    statistics: {
-      subscribers: "320K",
-      members: "17",
-    },
-  },
-  {
     name: "YT Battles",
     url: "https://youtube.com/@YT_Battles",
     image:
